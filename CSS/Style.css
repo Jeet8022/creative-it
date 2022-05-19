@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Arimo', sans-serif;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+}
+ul,ol{
+    list-style: none;
+}
+.container{
+    width: 1140px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+header{
+    background-color: #ee2e24;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 10px 0;
+}
+header .intro{
+    width: 20%;
+}
+header .news{
+    width: 80%;
+}
+
+nav .logo {
+    width: 40%;
+}
+nav .menu{
+    width: 60%;
+}
+
+nav ul{
+    list-style: none;
+    text-align: right;
+    
+}
+nav ul li{
+    display: inline-block;
+    position: relative;
+}
+nav ul li a{
+    color: #444;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 60px;
+    line-height: 60px;
+    padding: 0% 20px;
+    display: inline-block;
+    transition: 250ms;
+}
+
+nav ul li:last-child a{
+    background-color: #f00;
+    color: white;
+}
+
+
+nav ul li a:hover {
+    color: red;
+}
+
+nav ul li ul{
+    position: absolute;
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+}
+nav ul li ul li{
+    display: block;
+}
+
+nav ul li:hover > ul{
+    opacity: 1;
+    visibility: visibles;
+}
+
+
+
+#banner img{
+    width: 100%;
+}
+#About{
+    padding: 40px 0;
+}
+#About .img{
+    width: 40%;
+
+}
+#About .img img{
+    width: 100%;
+}
+#About .text{
+    width: 60%;
+    padding: 20px;
+    
+}
+#About h2{
+    font-family: 'Arimo', sans-serif;
+    font-size: 32px;
+    color: #5b6b80;
+    margin-bottom: 15px;
+    }
+
+#About p{
+    color: #777;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+#About{
+    padding: 40px 0;
+}
+#seminar-schedule{
+    background-color: #f5f5f5;
+    padding: 30px 0
+}
+#seminar-schedule h2{
+    font-size: 32px;
+    color: #444;
+    background-color: #dddddda3;
+    text-align: center;
+    padding: 15px 0;
+}
+.seminer table{
+    width: 100%;
+    text-align: center;
+}
+.seminer table th{
+    background-color: #49596d;
+    color: #fff!important;
+    padding: 20px 0;
+}
+.seminer table td{
+    border: 1px solid #eee ;
+    color: #222;
+    padding: 15px 0;
+    font-size: 20px;
+    
+}
+.seminer table td :last-child{
+    background-color: #49596d;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+
+.seminer table tr:nth-child(even){
+    background-color: rgba(0,0,0,0.1);
+}
+#courses{
+    padding: 40px;
+}
+#courses h2{
+    color: #5b6b80;
+    font-size: 32px;
+
+}
+#courses p{
+    color: #777;
+    font-size: 20px;
+}
+
+
+/* 
+.course {
+    width: 49%;
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    
+}
+.allCourses{
+    margin-top: 40px;
+}
+.course .text{
+    width: 60%;
+}
+
+.course .text h3{
+    color: #212529;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 15px 10px;
+}
+
+.course .text p{
+    color: #212529 !important;
+    line-height: 26px;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+}
+
+
+.course .text a{
+    display: inline-block;
+    background-color: #49596d;
+    color: white;
+    width: 180px;
+    border-radius: 0 25px 25px 0;
+    height: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+}
+
+.course .img{
+    width: 40%;
+}
+
+.course .img img{
+    width: 100%;
+    display: block;
+} */
+
+
+
+.course{
+    width: 50%;
+    background-color: hsl(0, 0%, 96%);
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.course .text{
+    width: 60%;
+}
+.course .img{
+    width: 40%;
+}
+.course .img img{
+    width: 100%;
+    display: block;
+}
+.course .text h3{
+    font-size: 24px;
+    color: #212529;
+    font-weight: 400;
+    padding: 15px 10px;
+
+}
+.course .text p{
+    color:#212529 !important ;
+    line-height: 26px;
+    margin-bottom: 30px;
+    padding:10px 10px ;
+    
+}
+.course .text a{
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    display: block;
+    background-color: #49596d;
+    color:white ;
+    border-radius: 0 25px 25px 0;
+
+}
+#gallery h2{
+    color: #5b6b80;
+    font-size: 32px;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+    
+}
+#gallery p{
+    color: #777;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 20px 0;
+}
+#gallery .img{
+    width: 32% ;
+    height: auto;
+    margin-bottom: 20px;
+    
+}
+#gallery .img img{
+    width: 100%;
+}
+
+
+
+#form .form_input{
+    width: 49%;
+margin-bottom: 20px;
+border-radius: 10px;
+}
+
+#form .form_input input{
+    width: 100%;
+    border: 1px solid #ddd;
+    height: 40px;
+    padding: 0 25px;
+}
